@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henangeo's Mapping Site</title>
+    <style>
+        /* Set up the background with a pinkish color and a subtle pattern */
+        body {
+            background-color: #ffccff; /* Light pink background */
+            background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes-light.png'); /* Adding a subtle pattern */
+            font-family: Arial, sans-serif;
+            color: black; /* Default text color (black) */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Styling for the main title with fade-in animation */
+        h1 {
+            color: black; /* Black title text */
+            font-size: 3em;
+            margin-top: 50px;
+            opacity: 0;
+            animation: fadeIn 2s forwards; /* Fade in effect for title */
+        }
+
+        /* Links section styling */
+        .links {
+            margin-top: 50px;
+            opacity: 0;
+            animation: slideIn 2s forwards; /* Slide in effect for links */
+        }
+
+        .links a {
+            display: block;
+            margin: 20px;
+            color: blue; /* Blue text for links */
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s; /* Smooth hover effect */
+        }
+
+        .links a:hover {
+            color: red; /* Change color on hover */
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        /* Footer message */
+        .footer {
+            margin-top: 100px;
+            font-size: 1em;
+            color: black; /* Black footer text */
+        }
+
+        /* Map icon styling */
+        .map-icon {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 100px; /* Increased icon size */
+            height: auto;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Henangeo's Mapping Site</h1>
+
+    <div class="links">
+        <p>Emojis: https://bluemoji.io</p>
+        <a href="https://bluemoji.io" target="_blank">Visit Emojis</a>
+
+        <p>Icons: https://www.flaticon.com</p>
+        <a href="https://www.flaticon.com" target="_blank">Visit Icons</a>
+
+        <p>Fonts: Friend me in Discord</p>
+
+
+        <p>Collabs: Discord Henangeo</p>
+
+        <p>Maps: Friend me in Discord: Henangeo</p>
+
+    </div>
+
+    <div class="footer">
+        <p>Any other questions, ask me in Discord and I will try my best to answer.</p>
+    </div>
+
+    <!-- Map Icon -->
+    <img src="https://cdn-icons-png.flaticon.com/512/9896/9896693.png" alt="Map Icon" class="map-icon" />
+</body>
+</html>
+
